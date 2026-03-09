@@ -54,8 +54,8 @@ nav.scrolled{background:rgba(10,10,10,0.97);box-shadow:0 2px 20px rgba(0,0,0,0.5
 #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--black);padding-top:70px}
 .hero-split{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:1400px;margin:0 auto;padding:0 60px;align-items:center;position:relative;z-index:1}
 .hero-left{padding-right:40px}
-.hero-logo-wrap{margin-bottom:32px}
-.hero-logo-wrap img{height:350px;filter:drop-shadow(0 0 40px rgba(230,57,70,0.3))}
+.hero-logo-wrap{display:flex;align-items:center;justify-content:center}
+.hero-logo-wrap img{width:100%;max-width:500px;height:auto;filter:drop-shadow(0 0 60px rgba(230,57,70,0.4))}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(230,57,70,0.1);border:1px solid rgba(230,57,70,0.3);color:var(--red);padding:8px 18px;border-radius:4px;font-size:13px;font-weight:500;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
 h1.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,7vw,96px);line-height:0.95;color:var(--white);margin-bottom:24px;letter-spacing:2px}
 h1.hero-title span{color:var(--red)}
@@ -336,7 +336,7 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
   .cars-grid{grid-template-columns:1fr}
   #adminPanel{width:100%;right:-100%}
   .hero-stats{gap:24px;flex-wrap:wrap}
-  .hero-logo-wrap img{height:200px}
+  .hero-logo-wrap img{width:80%;max-width:350px;height:auto}
   .det-box{max-width:100%;border-radius:8px}
   .det-carousel{height:250px}
   .det-body{padding:20px}
@@ -390,7 +390,6 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
   <div class="dot-grid"></div>
   <div class="hero-split">
     <div class="hero-left">
-      <div class="hero-logo-wrap"><img src="https://res.cloudinary.com/dnnlvpfjn/image/upload/v1773027949/conception-motors/logo-conception-motors.png" alt="Conception Motors"></div>
       <div class="hero-badge"><span class="en">&#10022; Trusted Used Car Dealership &middot; Reseda, CA</span><span class="es" style="display:none">&#10022; Concesionario de Confianza &middot; Reseda, CA</span></div>
       <h1 class="hero-title"><span class="en">Find Your<br><span>Perfect Car</span><br>Today.</span><span class="es" style="display:none">Encuentra Tu<br><span>Auto Perfecto</span><br>Hoy.</span></h1>
       <p class="hero-sub"><span class="en">Built on trust, integrity, and respect &mdash; flexible financing for every situation.</span><span class="es" style="display:none">Confianza, integridad y respeto &mdash; financiamiento flexible para toda situaci&oacute;n.</span></p>
@@ -406,20 +405,7 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
       </div>
     </div>
     <div class="hero-right">
-      <div class="geo-container">
-        <div class="geo-line geo-line-h" style="top:30%"></div>
-        <div class="geo-line geo-line-h" style="top:70%"></div>
-        <div class="geo-line geo-line-v" style="left:30%"></div>
-        <div class="geo-line geo-line-v" style="left:70%"></div>
-        <div class="geo-shape geo-square"></div>
-        <div class="geo-shape geo-square2"></div>
-        <div class="geo-shape geo-diamond"></div>
-        <div class="geo-shape geo-circle"></div>
-        <div class="geo-dot"></div>
-        <div class="geo-dot"></div>
-        <div class="geo-dot"></div>
-        <div class="geo-cross"></div>
-      </div>
+      <div class="hero-logo-wrap"><img src="https://res.cloudinary.com/dnnlvpfjn/image/upload/v1773027949/conception-motors/logo-conception-motors.png" alt="Conception Motors"></div>
     </div>
   </div>
 </section>
