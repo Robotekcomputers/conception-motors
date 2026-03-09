@@ -54,8 +54,9 @@ nav.scrolled{background:rgba(10,10,10,0.97);box-shadow:0 2px 20px rgba(0,0,0,0.5
 #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--black);padding-top:70px}
 .hero-split{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:1400px;margin:0 auto;padding:0 60px;align-items:center;position:relative;z-index:1}
 .hero-left{padding-right:40px}
-.hero-logo-wrap{display:flex;align-items:center;justify-content:center}
-.hero-logo-wrap img{width:100%;max-width:500px;height:auto;filter:drop-shadow(0 0 60px rgba(230,57,70,0.4))}
+.hero-logo-wrap{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;display:flex;align-items:center;justify-content:center}
+.hero-logo-wrap img{width:100%;max-width:420px;height:auto;filter:drop-shadow(0 0 60px rgba(230,57,70,0.4));animation:logoPulse 4s ease-in-out infinite}
+@keyframes logoPulse{0%,100%{filter:drop-shadow(0 0 40px rgba(230,57,70,0.3))}50%{filter:drop-shadow(0 0 80px rgba(230,57,70,0.6))}}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(230,57,70,0.1);border:1px solid rgba(230,57,70,0.3);color:var(--red);padding:8px 18px;border-radius:4px;font-size:13px;font-weight:500;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
 h1.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,7vw,96px);line-height:0.95;color:var(--white);margin-bottom:24px;letter-spacing:2px}
 h1.hero-title span{color:var(--red)}
@@ -405,7 +406,21 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
       </div>
     </div>
     <div class="hero-right">
-      <div class="hero-logo-wrap"><img src="https://res.cloudinary.com/dnnlvpfjn/image/upload/v1773027949/conception-motors/logo-conception-motors.png" alt="Conception Motors"></div>
+      <div class="geo-container">
+        <div class="geo-line geo-line-h" style="top:30%"></div>
+        <div class="geo-line geo-line-h" style="top:70%"></div>
+        <div class="geo-line geo-line-v" style="left:30%"></div>
+        <div class="geo-line geo-line-v" style="left:70%"></div>
+        <div class="geo-shape geo-square"></div>
+        <div class="geo-shape geo-square2"></div>
+        <div class="geo-shape geo-diamond"></div>
+        <div class="geo-shape geo-circle"></div>
+        <div class="geo-dot"></div>
+        <div class="geo-dot"></div>
+        <div class="geo-dot"></div>
+        <div class="geo-cross"></div>
+        <div class="hero-logo-wrap"><img src="https://res.cloudinary.com/dnnlvpfjn/image/upload/v1773027949/conception-motors/logo-conception-motors.png" alt="Conception Motors"></div>
+      </div>
     </div>
   </div>
 </section>
