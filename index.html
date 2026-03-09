@@ -38,9 +38,9 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opa
 .lang-btn.active{background:var(--red);border-color:var(--red);color:var(--white)}
 
 /* NAV — solid black bar with red top line */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--black);border-top:3px solid var(--red);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:70px;transition:all .3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--black);border-top:3px solid var(--red);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:100px;transition:all .3s}
 nav.scrolled{background:rgba(10,10,10,0.97);box-shadow:0 2px 20px rgba(0,0,0,0.5)}
-.logo img{height:48px;transition:all .3s}
+.logo img{height:90px;transition:all .3s;padding:4px 0}
 .nav-links{display:flex;list-style:none;gap:32px;position:absolute;left:50%;transform:translateX(-50%)}
 .nav-links li a{color:var(--gray);text-decoration:none;font-family:'Outfit',sans-serif;font-size:14px;font-weight:500;letter-spacing:1px;text-transform:uppercase;transition:color .3s;position:relative}
 .nav-links li a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--red);transition:width .3s}
@@ -54,8 +54,8 @@ nav.scrolled{background:rgba(10,10,10,0.97);box-shadow:0 2px 20px rgba(0,0,0,0.5
 #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--black);padding-top:70px}
 .hero-split{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:1400px;margin:0 auto;padding:0 60px;align-items:center;position:relative;z-index:1}
 .hero-left{padding-right:40px}
-.hero-logo-wrap{margin-bottom:24px}
-.hero-logo-wrap img{height:80px}
+.hero-logo-wrap{margin-bottom:32px}
+.hero-logo-wrap img{height:350px;filter:drop-shadow(0 0 40px rgba(230,57,70,0.3))}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(230,57,70,0.1);border:1px solid rgba(230,57,70,0.3);color:var(--red);padding:8px 18px;border-radius:4px;font-size:13px;font-weight:500;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
 h1.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,7vw,96px);line-height:0.95;color:var(--white);margin-bottom:24px;letter-spacing:2px}
 h1.hero-title span{color:var(--red)}
@@ -189,7 +189,7 @@ section{padding:100px 60px;position:relative}
 footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
 .foot-inner{max-width:1300px;margin:0 auto;padding:0 60px}
 .foot-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.06)}
-.foot-brand img{height:50px;margin-bottom:16px}
+.foot-brand img{height:120px;margin-bottom:16px}
 .foot-brand p{color:var(--gray);font-size:14px;line-height:1.6;max-width:280px}
 .foot-col h5{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--white);letter-spacing:2px;margin-bottom:16px}
 .foot-col ul{list-style:none}
@@ -205,7 +205,7 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
 /* LOGIN MODAL */
 .login-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:1050;display:flex;align-items:center;justify-content:center}
 .login-box{background:var(--charcoal);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:40px;text-align:center;max-width:380px;width:90%}
-.login-logo{height:60px;margin-bottom:20px}
+.login-logo{height:140px;margin-bottom:20px}
 .login-box h3{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--white);margin-bottom:8px;letter-spacing:1px}
 .login-box p{color:var(--gray);font-size:14px;margin-bottom:24px}
 .login-input-wrap{margin-bottom:16px}
@@ -336,7 +336,7 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
   .cars-grid{grid-template-columns:1fr}
   #adminPanel{width:100%;right:-100%}
   .hero-stats{gap:24px;flex-wrap:wrap}
-  .hero-logo-wrap img{height:60px}
+  .hero-logo-wrap img{height:200px}
   .det-box{max-width:100%;border-radius:8px}
   .det-carousel{height:250px}
   .det-body{padding:20px}
