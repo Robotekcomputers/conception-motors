@@ -21,7 +21,8 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);
 .reveal-scale.visible{opacity:1;transform:scale(1)}
 
 /* LANG BAR */
-#lang-bar{background:var(--navy);padding:8px 40px;display:flex;justify-content:flex-end;align-items:center;gap:12px}
+#lang-bar{display:none}
+.nav-lang{display:flex;gap:8px;align-items:center;margin-left:16px}
 #lang-bar span{color:var(--gray);font-size:12px;font-weight:500}
 .lang-btn{background:none;border:1px solid var(--gold);color:var(--gold);padding:4px 14px;border-radius:20px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;transition:all .3s}
 .lang-btn.active,.lang-btn:hover{background:var(--gold);color:var(--navy)}
@@ -337,12 +338,6 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   <a href="#contact" onclick="closeMobileNav()" class="nav-cta-mobile"><span class="en">Contact</span><span class="es" style="display:none">Contacto</span></a>
 </div>
 
-<div id="lang-bar">
-  <span class="en">Language:</span><span class="es" style="display:none">Idioma:</span>
-  <button class="lang-btn active" onclick="setLang('en',this)">EN</button>
-  <button class="lang-btn" onclick="setLang('es',this)">ES</button>
-</div>
-
 <nav>
   <a href="#" class="logo"><img src="https://res.cloudinary.com/dnnlvpfjn/image/upload/v1773027949/conception-motors/logo-conception-motors.png" alt="Conception Motors"></a>
   <ul class="nav-links">
@@ -351,6 +346,10 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
     <li><a href="#about"><span class="en">About Us</span><span class="es" style="display:none">Nosotros</span></a></li>
     <li><a href="#contact" class="nav-cta"><span class="en">Contact</span><span class="es" style="display:none">Contacto</span></a></li>
   </ul>
+  <div class="nav-lang">
+    <button class="lang-btn active" onclick="setLang('en',this)">EN</button>
+    <button class="lang-btn" onclick="setLang('es',this)">ES</button>
+  </div>
   <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileNav()"><span></span><span></span><span></span></button>
 </nav>
 
