@@ -593,7 +593,7 @@ function mapBodyStyle(bodyStyle) {
 window._novaLoaded = false;
 async function loadFromNova() {
   try {
-    const res = await fetch('https://trynova.app/api/v1/public/conception-motors/vehicles?page_size=100');
+    const res = await fetch('https://www.trynova.app/api/v1/public/conception-motors/vehicles?page_size=100');
     const json = await res.json();
     window._novaLoaded = true;
     window.cars = json.data.map(v => ({
