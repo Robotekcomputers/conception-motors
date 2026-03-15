@@ -51,7 +51,7 @@ nav.scrolled{background:rgba(10,10,10,0.97);box-shadow:0 2px 20px rgba(0,0,0,0.5
 .nav-cta:hover{background:var(--red-dark)!important}
 
 /* HERO — split layout */
-#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:transparent;padding-top:70px;z-index:1}
+#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:transparent;padding-top:110px;z-index:1}
 section{position:relative;z-index:1}
 .hero-split{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:1400px;margin:0 auto;padding:0 60px;align-items:center;position:relative;z-index:1}
 .hero-left{padding-right:40px}
@@ -199,69 +199,6 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
 .foot-col a:hover{color:var(--red)}
 .foot-bottom{display:flex;justify-content:space-between;padding:20px 0;color:rgba(255,255,255,0.3);font-size:13px}
 
-/* ADMIN TOGGLE */
-#adminToggle{position:fixed;bottom:24px;left:24px;background:var(--charcoal);border:1px solid rgba(255,255,255,0.1);color:var(--gray);padding:10px 18px;border-radius:6px;cursor:pointer;font-size:14px;z-index:50;font-family:'Outfit',sans-serif;transition:all .3s}
-#adminToggle:hover{border-color:var(--red);color:var(--red)}
-
-/* LOGIN MODAL */
-.login-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:1050;display:flex;align-items:center;justify-content:center}
-.login-box{background:var(--charcoal);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:40px;text-align:center;max-width:380px;width:90%}
-.login-logo{height:140px;margin-bottom:20px}
-.login-box h3{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--white);margin-bottom:8px;letter-spacing:1px}
-.login-box p{color:var(--gray);font-size:14px;margin-bottom:24px}
-.login-input-wrap{margin-bottom:16px}
-.login-input-wrap input{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:12px 16px;color:var(--white);font-size:14px;font-family:'Outfit',sans-serif;outline:none;transition:all .3s}
-.login-input-wrap input:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(230,57,70,0.15)}
-.login-btn{width:100%;background:var(--red);color:var(--white);border:none;padding:12px;border-radius:6px;font-family:'Outfit',sans-serif;font-weight:600;font-size:15px;cursor:pointer;transition:all .3s;margin-bottom:10px}
-.login-btn:hover{background:var(--red-dark)}
-.login-err{color:var(--red-bright);font-size:13px;margin-bottom:10px;min-height:20px}
-.login-cancel{background:none;border:1px solid rgba(255,255,255,0.1);color:var(--gray);padding:8px 20px;border-radius:6px;cursor:pointer;font-family:'Outfit',sans-serif;font-size:13px;transition:all .3s}
-.login-cancel:hover{border-color:var(--red);color:var(--white)}
-
-/* ADMIN PANEL — dark themed */
-#adminPanel{position:fixed;top:0;right:-520px;width:520px;height:100vh;background:var(--charcoal);z-index:999;overflow-y:auto;transition:right .4s cubic-bezier(.4,0,.2,1);border-left:2px solid var(--red)}
-#adminPanel.open{right:0}
-.ap-header{padding:20px 24px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between;background:var(--surface)}
-.ap-header h2{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--white);letter-spacing:1px}
-.ap-header h2 span{color:var(--red)}
-.ap-close{background:none;border:1px solid rgba(255,255,255,0.1);color:var(--gray);width:36px;height:36px;border-radius:6px;cursor:pointer;font-size:18px;transition:all .3s;display:flex;align-items:center;justify-content:center}
-.ap-close:hover{border-color:var(--red);color:var(--red)}
-.ap-body{padding:20px 24px}
-.ap-section{margin-bottom:24px}
-.ap-section-title{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.06)}
-.car-row{background:var(--surface);border:1px solid rgba(255,255,255,0.05);border-radius:8px;padding:14px;margin-bottom:10px;display:flex;align-items:center;gap:12px;transition:all .3s;justify-content:space-between}
-.car-row:hover{border-color:rgba(230,57,70,0.3);background:var(--surface2)}
-.car-row-thumb{width:56px;height:42px;border-radius:6px;object-fit:cover;background:var(--darkgray);flex-shrink:0}
-.car-row-info{flex:1;min-width:0;overflow:hidden}
-.car-row-info strong{display:block;font-size:14px;color:var(--white);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.car-row-info span{font-size:12px;color:var(--red)}
-.car-row-btns{display:flex;gap:8px;flex-shrink:0;margin-left:12px}
-.btn-edit{background:rgba(230,57,70,0.1);border:1px solid rgba(230,57,70,0.3);color:var(--red);padding:8px 16px;border-radius:4px;cursor:pointer;font-size:13px;font-weight:600;font-family:'Outfit',sans-serif;transition:all .3s;white-space:nowrap}
-.btn-edit:hover{background:var(--red);color:var(--white)}
-.btn-del{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);color:var(--gray);padding:8px 16px;border-radius:4px;cursor:pointer;font-size:13px;font-weight:600;font-family:'Outfit',sans-serif;transition:all .3s;white-space:nowrap}
-.btn-del:hover{background:rgba(255,50,50,0.2);border-color:rgba(255,50,50,0.4);color:#ff6b6b}
-.btn-reset-inv{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);padding:6px 14px;border-radius:4px;cursor:pointer;font-size:12px;font-family:'Outfit',sans-serif;transition:all .3s}
-.btn-reset-inv:hover{border-color:var(--red);color:var(--red)}
-.ap-form{background:var(--surface);border:1px solid rgba(255,255,255,0.05);border-radius:8px;padding:24px;position:relative;overflow:hidden}
-.ap-form::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--red)}
-.ap-form-title{font-family:'Bebas Neue',sans-serif;font-size:18px;font-weight:400;color:var(--white);margin-bottom:16px;letter-spacing:1px}
-.ap-fg{margin-bottom:12px}.ap-fg label{display:block;font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:6px;font-weight:500}
-.ap-fg input,.ap-fg select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:11px 14px;color:var(--white);font-family:'Outfit',sans-serif;font-size:13px;outline:none;transition:all .3s}
-.ap-fg input:focus,.ap-fg select:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(230,57,70,0.1)}.ap-fg select option{background:var(--charcoal)}
-.ap-fr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.img-upload-area{border:2px dashed rgba(230,57,70,0.3);border-radius:8px;padding:24px;text-align:center;cursor:pointer;transition:all .3s;background:rgba(230,57,70,0.02)}
-.img-upload-area:hover{border-color:var(--red);background:rgba(230,57,70,0.06)}
-.img-upload-area input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer}
-.img-upload-area .up-icon{font-size:28px;margin-bottom:8px}
-.img-upload-area p{font-size:13px;color:rgba(255,255,255,0.35)}
-.img-upload-area p strong{color:var(--red)}
-.img-preview-box{width:100%;height:120px;object-fit:cover;border-radius:8px;margin-top:10px;display:none}
-.ap-save-btn{width:100%;background:var(--red);color:var(--white);border:none;padding:14px;border-radius:6px;font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;cursor:pointer;margin-top:8px;transition:all .3s}
-.ap-save-btn:hover{background:var(--red-dark);transform:translateY(-1px)}
-.ap-cancel-btn{width:100%;background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.08);padding:11px;border-radius:6px;font-family:'Outfit',sans-serif;font-size:13px;cursor:pointer;margin-top:6px;transition:all .3s}
-.ap-cancel-btn:hover{color:var(--white);border-color:rgba(255,255,255,0.2)}
-.ap-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:998;display:none}
-.ap-overlay.show{display:block}
 .toast{position:fixed;bottom:90px;right:28px;background:var(--charcoal);border:1px solid rgba(230,57,70,0.3);color:var(--white);padding:14px 24px;border-radius:6px;font-size:14px;z-index:1100;transform:translateY(20px);opacity:0;transition:all .4s cubic-bezier(.4,0,.2,1);pointer-events:none;box-shadow:0 8px 32px rgba(0,0,0,0.4)}
 .toast.show{transform:translateY(0);opacity:1}
 
@@ -319,7 +256,8 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
 @media(max-width:1024px){
   .hero-split{grid-template-columns:1fr;padding:0 30px}
   .hero-left{padding-right:0;text-align:center}
-  .hero-right{display:none}
+  .hero-right{order:-1;height:auto;margin-bottom:24px}
+  .hero-logo-wrap img{max-width:280px}
   .hero-stats{justify-content:center}
   .hero-sub{margin-left:auto;margin-right:auto}
   .hero-buttons{justify-content:center}
@@ -327,17 +265,20 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
 }
 
 @media(max-width:900px){
-  nav{padding:0 20px}.nav-links{display:none}.hamburger{display:flex}
+  nav{padding:0 16px;height:70px}.nav-links{display:none}.hamburger{display:flex}
+  .logo img{height:55px}
+  #hero{padding-top:80px}
   section{padding:60px 20px}
+  .hero-badge{font-size:11px;padding:6px 12px;letter-spacing:0.5px}
+  .hero-logo-wrap img{max-width:220px}
   .contact-grid{grid-template-columns:1fr}
   .about-grid{grid-template-columns:6px 1fr}
   .about-content{padding-left:30px}
   .foot-top{grid-template-columns:1fr 1fr;gap:30px}
   .fr{grid-template-columns:1fr}
   .cars-grid{grid-template-columns:1fr}
-  #adminPanel{width:100%;right:-100%}
+
   .hero-stats{gap:24px;flex-wrap:wrap}
-  .hero-logo-wrap img{width:80%;max-width:350px;height:auto}
   .det-box{max-width:100%;border-radius:8px}
   .det-carousel{height:250px}
   .det-body{padding:20px}
@@ -349,9 +290,15 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
 }
 
 @media(max-width:480px){
+  nav{height:60px;padding:0 12px}
+  .logo img{height:45px}
+  #hero{padding-top:70px}
   section{padding:50px 16px}
   .hero-split{padding:0 16px}
-  h1.hero-title{font-size:clamp(40px,10vw,56px)}
+  .hero-badge{font-size:10px;padding:5px 10px;text-align:center}
+  .hero-logo-wrap img{max-width:180px}
+  h1.hero-title{font-size:clamp(36px,9vw,48px)}
+  .hero-sub{font-size:15px}
   .hero-buttons{flex-direction:column;align-items:stretch}
   .hero-buttons a{text-align:center}
   .values{grid-template-columns:1fr}
@@ -360,8 +307,6 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
   .det-actions{flex-direction:column}
 }
 </style>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
 <!-- MOBILE NAV OVERLAY -->
@@ -596,71 +541,6 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
   </div>
 </footer>
 
-<button id="adminToggle" onclick="showLogin()">&#9881; Admin</button>
-<div class="ap-overlay" id="apOverlay" onclick="closeAdmin()"></div>
-
-<!-- LOGIN MODAL -->
-<div class="login-overlay" id="loginModal" style="display:none">
-  <div class="login-box">
-    <img src="https://res.cloudinary.com/dnnlvpfjn/image/upload/v1773027949/conception-motors/logo-conception-motors.png" class="login-logo" alt="Conception Motors">
-    <h3>Admin Access</h3>
-    <p>Enter your password to manage inventory</p>
-    <div class="login-input-wrap">
-      <input type="password" id="loginPwd" placeholder="Password" onkeydown="if(event.key==='Enter')checkLogin()">
-    </div>
-    <button class="login-btn" onclick="checkLogin()">&#128275; Enter</button>
-    <div class="login-err" id="loginErr"></div>
-    <button class="login-cancel" onclick="document.getElementById('loginModal').style.display='none'">Cancel</button>
-  </div>
-</div>
-
-<!-- ADMIN PANEL -->
-<div id="adminPanel">
-  <div class="ap-header">
-    <h2>Conception <span>Motors</span> &mdash; Admin</h2>
-    <button class="ap-close" onclick="closeAdmin()">&#x2715;</button>
-  </div>
-  <div class="ap-body">
-    <div class="ap-section">
-      <div class="ap-section-title" style="display:flex;align-items:center;justify-content:space-between">Current Inventory / Inventario Actual<button class="btn-reset-inv" onclick="resetInventory()">&#8634; Reset to defaults</button></div>
-      <div id="apCarList"></div>
-    </div>
-    <div class="ap-section">
-      <div class="ap-form" id="apForm">
-        <div class="ap-form-title" id="apFormTitle">&#10133; Add New Vehicle / Agregar Veh&iacute;culo</div>
-        <input type="hidden" id="apEditId" value="">
-        <div class="ap-fg"><label>Year / A&ntilde;o</label><input type="number" id="apYear" placeholder="2022" min="2000" max="2030"></div>
-        <div class="ap-fr">
-          <div class="ap-fg"><label>Make / Marca</label><input type="text" id="apMake" placeholder="Toyota"></div>
-          <div class="ap-fg"><label>Model / Modelo</label><input type="text" id="apModel" placeholder="Camry"></div>
-        </div>
-        <div class="ap-fr">
-          <div class="ap-fg"><label>Price / Precio ($)</label><input type="number" id="apPrice" placeholder="24900"></div>
-          <div class="ap-fg"><label>Monthly / Mensual ($)</label><input type="number" id="apMonthly" placeholder="349"></div>
-        </div>
-        <div class="ap-fr">
-          <div class="ap-fg"><label>Mileage / Millaje</label><input type="text" id="apMileage" placeholder="32,000 mi"></div>
-          <div class="ap-fg"><label>Drive / Tracci&oacute;n</label><select id="apDrive"><option>FWD</option><option>AWD</option><option>4x4</option><option>RWD</option></select></div>
-        </div>
-        <div class="ap-fg"><label>Category / Categor&iacute;a</label><select id="apType"><option value="sedan">Sedan</option><option value="suv">SUV</option><option value="truck">Truck / Camioneta</option></select></div>
-        <div class="ap-fg"><label>Badge / Etiqueta</label><select id="apBadge"><option>Hot Deal</option><option>Certified</option><option>New Arrival</option><option>Low Miles</option><option>Popular</option><option>Great Value</option></select></div>
-        <div class="ap-fg">
-          <label>Photos / Fotos del Veh&iacute;culo <span style="font-weight:400;color:var(--gray)">(up to 8 &mdash; puedes seleccionar varias a la vez)</span></label>
-          <label for="apImgFile" class="img-upload-area" style="cursor:pointer;display:block">
-            <input type="file" id="apImgFile" accept="image/*" multiple onchange="previewImages(event)" style="display:none">
-            <div class="up-icon">&#128247;</div>
-            <p><strong>Click aqu&iacute; para subir fotos</strong></p>
-            <p style="font-size:12px;margin-top:4px;color:var(--gray)">Selecciona una o varias fotos a la vez &bull; JPG, PNG, WEBP</p>
-          </label>
-          <div id="apImgPreviews" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px"></div>
-          <input type="hidden" id="apImgData" value="">
-        </div>
-        <button class="ap-save-btn" onclick="saveCar()">&#128190; Save Vehicle / Guardar</button>
-        <button class="ap-cancel-btn" id="apCancelBtn" style="display:none" onclick="cancelEdit()">Cancel / Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="toast" id="toast"></div>
 
@@ -694,117 +574,60 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
     </div>
   </div>
 </div>
-<!-- Firebase SDK -->
-<!-- Firebase moved to head -->
 <script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyDRqPUHDZqAn7rrIJXyTEcqGwf4OnauX3U",
-    authDomain: "conception-motors-acb13.firebaseapp.com",
-    projectId: "conception-motors-acb13",
-    storageBucket: "conception-motors-acb13.firebasestorage.app",
-    messagingSenderId: "861460330448",
-    appId: "1:861460330448:web:b74196c0c6b2efd78babd5"
-  };
-
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-
-  window.fbSaveCar = async function(car) {
-    try {
-      await db.collection('inventory').doc(String(car.id)).set(car);
-      console.log('Car saved to Firebase:', car.id);
-    } catch(e) {
-      console.error('Firebase save error:', e);
-    }
-  };
-
-  window.fbDeleteCar = async function(id) {
-    try {
-      await db.collection('inventory').doc(String(id)).delete();
-      console.log('Car deleted from Firebase:', id);
-    } catch(e) {
-      console.error('Firebase delete error:', e);
-    }
-  };
-
-  window.startInventorySync = function() {
-    console.log('Starting Firebase sync...');
-    db.collection('inventory').onSnapshot(snapshot => {
-      const loaded = [];
-      snapshot.forEach(d => loaded.push(d.data()));
-      loaded.sort((a,b) => (a.order||a.id) - (b.order||b.id));
-      window.cars = loaded;
-      window.nextId = loaded.length ? Math.max(...loaded.map(c=>c.id)) + 1 : 100;
-      window._firebaseSynced = true;
-      console.log('Firebase synced:', loaded.length, 'cars');
-      function tryRender(n) {
-        if(window.renderGrid) {
-          window.renderGrid();
-          if(window.renderAdminList) window.renderAdminList();
-          if(window.populateFinVehicleSelect) window.populateFinVehicleSelect();
-        } else if(n > 0) {
-          setTimeout(() => tryRender(n-1), 300);
-        }
-      }
-      tryRender(20);
-    }, err => {
-      console.error('Firebase error:', err);
-    });
-  };
-
-  // Start sync as soon as DOM is ready
-  if(document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', window.startInventorySync);
-  } else {
-    window.startInventorySync();
-  }
-</script>
-
-<script>
-const PWD_HASH = "84f489b8dfdb2a42f9d1331554c7c2b2d0ffa498f53690dd1de8499a619dd0f3";
-
-async function sha256(msg){
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
-  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
-}
-
-function showLogin(){
-  document.getElementById('loginModal').style.display='flex';
-  document.getElementById('loginPwd').value='';
-  document.getElementById('loginErr').textContent='';
-  setTimeout(()=>document.getElementById('loginPwd').focus(),100);
-}
-
-async function checkLogin(){
-  const pwd = document.getElementById('loginPwd').value;
-  const hash = await sha256(pwd);
-  if(hash === PWD_HASH){
-    document.getElementById('loginModal').style.display='none';
-    openAdmin();
-  } else {
-    document.getElementById('loginErr').textContent='Incorrect password / Contrase\u00f1a incorrecta';
-    document.getElementById('loginPwd').value='';
-    document.getElementById('loginPwd').focus();
-  }
-}
-
-function openAdmin(){
-  document.getElementById('adminPanel').classList.add('open');
-  document.getElementById('apOverlay').classList.add('show');
-  renderAdminList();
-}
-
-function closeAdmin(){
-  document.getElementById('adminPanel').classList.remove('open');
-  document.getElementById('apOverlay').classList.remove('show');
-}
-
-// Cars array - populated by Firebase
+// Cars array - populated by NOVA API
 let cars = [];
 let nextId = 100;
 
-function saveCarsToStorage(){ /* disabled - using Firebase */ }
-function loadCars(){ return []; }
+function mapBodyStyle(bodyStyle) {
+  if (!bodyStyle) return 'sedan';
+  const bs = bodyStyle.toLowerCase();
+  if (bs.includes('suv') || bs.includes('crossover')) return 'suv';
+  if (bs.includes('truck') || bs.includes('pickup')) return 'truck';
+  if (bs.includes('sedan') || bs.includes('coupe') || bs.includes('hatchback')) return 'sedan';
+  if (bs.includes('van') || bs.includes('minivan')) return 'suv';
+  if (bs.includes('wagon')) return 'sedan';
+  return 'sedan';
+}
+
+async function loadFromNova() {
+  try {
+    const res = await fetch('https://trynova.app/api/v1/public/conception-motors/vehicles?page_size=100');
+    const json = await res.json();
+    window.cars = json.data.map(v => ({
+      id: v.id,
+      year: v.year,
+      make: v.make,
+      model: v.model || v.trim || '',
+      price: v.selling_price || 0,
+      monthly: Math.round((v.selling_price || 0) / 60),
+      mileage: v.mileage ? v.mileage.toLocaleString() + ' mi' : 'N/A',
+      drive: v.drivetrain || 'FWD',
+      type: mapBodyStyle(v.body_style),
+      badge: v.body_style || 'Vehicle',
+      fuel: v.fuel_type || 'Gasoline',
+      imgs: (v.photos || []).sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0)).map(p => p.url),
+      img: (v.photos || []).find(p => p.is_primary)?.url || ((v.photos || [])[0]?.url) || ''
+    }));
+    cars = window.cars;
+    window.nextId = window.cars.length + 100;
+    renderGrid();
+    populateFinVehicleSelect();
+    console.log('NOVA loaded:', window.cars.length, 'vehicles');
+  } catch (e) {
+    console.error('Failed to load from NOVA:', e);
+    window.cars = [];
+    cars = [];
+    renderGrid();
+  }
+}
+
+// Start loading from NOVA as soon as DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadFromNova);
+} else {
+  loadFromNova();
+}
 
 let currentFilter='all';
 
@@ -813,7 +636,6 @@ function fmtPrice(n){return '$'+Number(n).toLocaleString();}
 window.renderGrid = function renderGrid(){
   const grid=document.getElementById('carsGrid');
   if(!grid) return;
-  // Always use window.cars (populated by Firebase)
   cars = window.cars || cars;
   if(!cars || cars.length === 0){
     grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--gray)"><div style="font-size:40px;margin-bottom:16px">&#9203;</div><div style="font-size:16px">Loading inventory...</div></div>';
@@ -833,7 +655,7 @@ window.renderGrid = function renderGrid(){
       <div class="car-info">
         <div class="car-year">${c.year}</div>
         <div class="car-name">${c.make} ${c.model}</div>
-        <div class="car-specs"><span class="car-spec">${c.mileage}</span><span class="car-spec">${c.drive}</span><span class="car-spec"><span class="en" style="display:none">Gas</span><span class="es">Gasolina</span></span></div>
+        <div class="car-specs"><span class="car-spec">${c.mileage}</span><span class="car-spec">${c.drive}</span><span class="car-spec">${c.fuel||'<span class="en" style="display:none">Gas</span><span class="es">Gasolina</span>'}</span></div>
         <div class="car-foot">
           <div class="car-price">${fmtPrice(c.price)} <small>/ ${fmtPrice(c.monthly)}/mo</small></div>
           <button class="btn-sm" onclick="openDetails(${c.id})"><span class="en" style="display:none">Details</span><span class="es">Detalles</span></button>
@@ -849,179 +671,11 @@ window.renderGrid = function renderGrid(){
   },50);
 }
 
-window.renderAdminList = function renderAdminList(){
-  document.getElementById('apCarList').innerHTML=cars.map(c=>`
-    <div class="car-row">
-      ${(()=>{const t=Array.isArray(c.imgs)&&c.imgs[0]?c.imgs[0]:c.img;return t?`<img class="car-row-thumb" src="${t}" alt="">`:'<div class="car-row-thumb" style="display:flex;align-items:center;justify-content:center;font-size:22px">&#128663;</div>';})()}
-      <div class="car-row-info"><strong>${c.year} ${c.make} ${c.model}</strong><span>${fmtPrice(c.price)} &bull; ${c.mileage}</span></div>
-      <div class="car-row-btns">
-        <button class="btn-edit" onclick="editCar(${c.id})">&#9998; Edit</button>
-        <button class="btn-del" onclick="deleteCar(${c.id})">&#128465; Delete</button>
-      </div>
-    </div>`).join('');
-}
-
 function filterCars(type,btn){
   currentFilter=type;
   document.querySelectorAll('.f-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   renderGrid();
-}
-
-async function previewImages(e){
-  const files = Array.from(e.target.files);
-  if(!files.length) return;
-
-  let existing = [];
-  try { existing = JSON.parse(document.getElementById('apImgData').value || '[]'); } catch(x){ existing=[]; }
-
-  const remaining = 8 - existing.length;
-  const toAdd = files.slice(0, remaining);
-  if(!toAdd.length){ showToast('Maximum 8 photos / M\u00e1ximo 8 fotos'); return; }
-
-  showToast('Uploading '+toAdd.length+' photo'+(toAdd.length>1?'s':'')+'...');
-
-  const CLOUD = 'dnnlvpfjn';
-  const PRESET = 'conception-motors';
-  let uploaded = 0;
-
-  for(const file of toAdd){
-    try {
-      const formData = new FormData();
-      formData.append('file', file);
-      formData.append('upload_preset', PRESET);
-      formData.append('folder', 'conception-motors');
-
-      const res = await fetch('https://api.cloudinary.com/v1_1/'+CLOUD+'/image/upload', {
-        method: 'POST',
-        body: formData
-      });
-      const data = await res.json();
-      if(data.secure_url){
-        existing.push(data.secure_url);
-        uploaded++;
-        showToast(uploaded+' of '+toAdd.length+' uploaded...');
-      } else {
-        showToast('Error uploading photo');
-        console.error('Cloudinary error:', data);
-      }
-    } catch(err) {
-      console.error('Upload error:', err);
-      showToast('Upload failed - check connection');
-    }
-  }
-
-  document.getElementById('apImgData').value = JSON.stringify(existing);
-  renderImgPreviews(existing);
-  showToast(existing.length+' photo'+(existing.length>1?'s':'')+' ready!');
-  e.target.value = '';
-}
-
-function renderImgPreviews(imgs){
-  const previews = document.getElementById('apImgPreviews');
-  if(!imgs || !imgs.length){
-    previews.innerHTML = '';
-    return;
-  }
-  previews.innerHTML = imgs.map((src,i)=>`
-    <div style="position:relative;width:90px;height:68px;flex-shrink:0">
-      <img src="${src}" style="width:90px;height:68px;object-fit:cover;border-radius:6px;border:2px solid var(--red);display:block">
-      ${i===0?'<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(230,57,70,0.85);color:#fff;font-size:9px;font-weight:700;text-align:center;padding:2px;border-radius:0 0 4px 4px;letter-spacing:0.5px">MAIN</div>':''}
-      <button onclick="removeImgPreview(${i})" style="position:absolute;top:-7px;right:-7px;background:#c0392b;color:#fff;border:none;border-radius:50%;width:20px;height:20px;font-size:12px;cursor:pointer;line-height:1;display:flex;align-items:center;justify-content:center">x</button>
-    </div>`).join('');
-}
-
-function removeImgPreview(idx){
-  let imgs = [];
-  try { imgs = JSON.parse(document.getElementById('apImgData').value || '[]'); } catch(x){}
-  imgs.splice(idx,1);
-  document.getElementById('apImgData').value = JSON.stringify(imgs);
-  renderImgPreviews(imgs);
-}
-
-function saveCar(){
-  const year=parseInt(document.getElementById('apYear').value);
-  const make=document.getElementById('apMake').value.trim();
-  const model=document.getElementById('apModel').value.trim();
-  const price=parseInt(document.getElementById('apPrice').value);
-  const monthly=parseInt(document.getElementById('apMonthly').value)||0;
-  const mileage=document.getElementById('apMileage').value.trim();
-  const drive=document.getElementById('apDrive').value;
-  const type=document.getElementById('apType').value;
-  const badge=document.getElementById('apBadge').value;
-  const imgData=document.getElementById('apImgData').value;
-  const editId=document.getElementById('apEditId').value;
-  if(!year||!make||!model||!price){showToast('Please fill: Year, Make, Model, Price');return;}
-  if(editId){
-    const idx=cars.findIndex(c=>c.id==editId);
-    if(idx>-1){
-      let editImgs = []; try { editImgs = JSON.parse(imgData || '[]'); } catch(x){ if(imgData) editImgs=[imgData]; }
-      if(!editImgs.length){ editImgs = Array.isArray(cars[idx].imgs)?cars[idx].imgs:(cars[idx].img?[cars[idx].img]:[]); }
-      cars[idx]={...cars[idx],year,make,model,price,monthly,mileage,drive,type,badge,imgs:editImgs,img:editImgs[0]||''};
-    }
-    showToast('Vehicle updated!'); cancelEdit();
-  }else{
-    let newImgs = []; try { newImgs = JSON.parse(imgData || '[]'); } catch(x){ if(imgData) newImgs=[imgData]; }
-    cars.push({id:nextId++,year,make,model,price,monthly,mileage,drive,type,badge,imgs:newImgs,img:newImgs[0]||''});
-    showToast('Vehicle added!'); clearForm();
-  }
-  // Save to Firebase (Firebase onSnapshot will update the grid automatically)
-  const savedCar = editId ? cars.find(c=>c.id==editId) : cars[cars.length-1];
-  if(savedCar && window.fbSaveCar) window.fbSaveCar({...savedCar, order: savedCar.id||nextId});
-}
-
-function editCar(id){
-  const c=cars.find(x=>x.id===id); if(!c)return;
-  document.getElementById('apEditId').value=id;
-  document.getElementById('apYear').value=c.year;
-  document.getElementById('apMake').value=c.make;
-  document.getElementById('apModel').value=c.model;
-  document.getElementById('apPrice').value=c.price;
-  document.getElementById('apMonthly').value=c.monthly;
-  document.getElementById('apMileage').value=c.mileage;
-  document.getElementById('apDrive').value=c.drive;
-  document.getElementById('apType').value=c.type;
-  document.getElementById('apBadge').value=c.badge;
-  // Handle images (array or single string for backwards compat)
-  const imgs = Array.isArray(c.imgs) ? c.imgs : (c.img ? [c.img] : []);
-  document.getElementById('apImgData').value = JSON.stringify(imgs);
-  renderImgPreviews(imgs);
-  document.getElementById('apFormTitle').textContent='Edit Vehicle / Editar Veh\u00edculo';
-  document.getElementById('apCancelBtn').style.display='block';
-  showToast('Editing: '+c.year+' '+c.make+' '+c.model);
-  setTimeout(()=>{
-    const f = document.getElementById('apForm');
-    const panel = document.getElementById('adminPanel');
-    if(f && panel) panel.scrollTo({top: f.offsetTop - 20, behavior:'smooth'});
-  }, 50);
-}
-
-function cancelEdit(){
-  document.getElementById('apEditId').value='';
-  document.getElementById('apFormTitle').textContent='Add New Vehicle / Agregar Veh\u00edculo';
-  document.getElementById('apCancelBtn').style.display='none';
-  clearForm();
-}
-
-function clearForm(){
-  ['apYear','apMake','apModel','apPrice','apMonthly','apMileage','apImgData'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('apImgPreviews').innerHTML='';
-  document.getElementById('apImgFile').value='';
-}
-
-function resetInventory(){
-  if(!confirm('Reset inventory to default vehicles? All custom vehicles will be removed.\n\u00bfRestablecer el inventario a los veh\u00edculos originales?'))return;
-  localStorage.removeItem('cm_inventory');
-  cars = JSON.parse(JSON.stringify(DEFAULT_CARS));
-  nextId = Math.max(...cars.map(c=>c.id)) + 1;
-  renderGrid(); renderAdminList(); showToast('Inventory reset to defaults');
-}
-
-function deleteCar(id){
-  if(!confirm('Delete this vehicle? / \u00bfEliminar este veh\u00edculo?'))return;
-  cars=cars.filter(c=>c.id!==id);
-  showToast('Vehicle removed');
-  if(window.fbDeleteCar) window.fbDeleteCar(id);
 }
 
 function showToast(msg){
@@ -1136,7 +790,7 @@ function openDetails(id){
   document.getElementById('detMileage').textContent = c.mileage;
   document.getElementById('detDrive').textContent = c.drive;
   document.getElementById('detType').textContent = c.type.charAt(0).toUpperCase()+c.type.slice(1);
-  document.getElementById('detFuel').textContent = isEs?'Gasolina':'Gasoline';
+  document.getElementById('detFuel').textContent = c.fuel || (isEs?'Gasolina':'Gasoline');
 
   // Labels
   document.getElementById('detLabelMileage').textContent = isEs?'Millaje':'Mileage';
@@ -1243,32 +897,8 @@ function animateCounters(){
 }
 
 // ── INIT ─────────────────────────────────────────────────────
-renderGrid(); // Shows loading spinner initially
-renderAdminList();
+renderGrid(); // Shows loading spinner until NOVA data arrives
 populateFinVehicleSelect();
-// Clear any stale localStorage
-try { localStorage.removeItem('cm_inventory'); } catch(e){}
-
-// Firebase handles all data - no migration needed
-
-// If Firebase already synced before this script ran, render now
-if(window.cars && window.cars.length > 0) {
-  renderGrid();
-  renderAdminList();
-  populateFinVehicleSelect();
-  console.log('Rendered from existing Firebase data:', window.cars.length, 'cars');
-}
-
-// Also poll every second for 10 seconds in case Firebase syncs late
-let _renderPoll = setInterval(() => {
-  if(window.cars && window.cars.length > 0) {
-    renderGrid();
-    renderAdminList();
-    populateFinVehicleSelect();
-    clearInterval(_renderPoll);
-  }
-}, 1000);
-setTimeout(() => clearInterval(_renderPoll), 10000);
 
 // Start enhancements
 createParticles();
