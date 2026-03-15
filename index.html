@@ -590,10 +590,12 @@ function mapBodyStyle(bodyStyle) {
   return 'sedan';
 }
 
+window._novaLoaded = false;
 async function loadFromNova() {
   try {
     const res = await fetch('https://trynova.app/api/v1/public/conception-motors/vehicles?page_size=100');
     const json = await res.json();
+    window._novaLoaded = true;
     window.cars = json.data.map(v => ({
       id: v.id,
       year: v.year,
@@ -616,6 +618,7 @@ async function loadFromNova() {
     console.log('NOVA loaded:', window.cars.length, 'vehicles');
   } catch (e) {
     console.error('Failed to load from NOVA:', e);
+    window._novaLoaded = true;
     window.cars = [];
     cars = [];
     renderGrid();
@@ -638,7 +641,11 @@ window.renderGrid = function renderGrid(){
   if(!grid) return;
   cars = window.cars || cars;
   if(!cars || cars.length === 0){
-    grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--gray)"><div style="font-size:40px;margin-bottom:16px">&#9203;</div><div style="font-size:16px">Loading inventory...</div></div>';
+    if(window._novaLoaded){
+      grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--gray)"><div style="font-size:40px;margin-bottom:16px">&#128663;</div><div style="font-size:18px"><span class="en" style="display:none">New inventory coming soon!</span><span class="es">Nuevo inventario pr&oacute;ximamente!</span></div><div style="font-size:14px;margin-top:8px"><span class="en" style="display:none">Contact us for current availability</span><span class="es">Cont&aacute;ctenos para disponibilidad actual</span></div></div>';
+    } else {
+      grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--gray)"><div style="font-size:40px;margin-bottom:16px">&#9203;</div><div style="font-size:16px"><span class="en" style="display:none">Loading inventory...</span><span class="es">Cargando inventario...</span></div></div>';
+    }
     return;
   }
   const filtered=currentFilter==='all'?cars:cars.filter(c=>c.type===currentFilter);
