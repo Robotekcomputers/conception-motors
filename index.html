@@ -665,7 +665,7 @@ window.renderGrid = function renderGrid(){
         <div class="car-specs"><span class="car-spec">${c.mileage}</span><span class="car-spec">${c.drive}</span><span class="car-spec">${c.fuel||'<span class="en" style="display:none">Gas</span><span class="es">Gasolina</span>'}</span></div>
         <div class="car-foot">
           <div class="car-price">${fmtPrice(c.price)} <small>/ ${fmtPrice(c.monthly)}/mo</small></div>
-          <button class="btn-sm" onclick="openDetails(${c.id})"><span class="en" style="display:none">Details</span><span class="es">Detalles</span></button>
+          <button class="btn-sm" onclick="openDetails('${c.id}')"><span class="en" style="display:none">Details</span><span class="es">Detalles</span></button>
         </div>
       </div>
     </div>`;
