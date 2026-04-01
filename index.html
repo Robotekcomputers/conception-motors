@@ -111,7 +111,7 @@ section{padding:100px 60px;position:relative}
 .cars-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
 .car-card{background:var(--charcoal);border:1px solid rgba(255,255,255,0.05);border-radius:8px;overflow:hidden;transition:all .4s cubic-bezier(.4,0,.2,1);cursor:pointer}
 .car-card:hover{border-color:var(--red);box-shadow:0 0 30px rgba(230,57,70,0.15),0 0 60px rgba(230,57,70,0.05)}
-.car-img-wrap{height:240px;overflow:hidden;position:relative;background:var(--surface)}
+.car-img-wrap{height:320px;overflow:hidden;position:relative;background:var(--surface)}
 .car-img-wrap img{width:100%;height:100%;object-fit:contain;transition:transform .6s}
 .car-card:hover .car-img-wrap img{transform:scale(1.05)}
 .car-badge{position:absolute;top:14px;left:14px;background:var(--red);color:var(--white);padding:5px 14px;border-radius:3px;font-size:12px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase}
@@ -219,8 +219,8 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
 /* DETAILS MODAL — dark themed */
 .det-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:1000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
 .det-overlay.open{opacity:1;pointer-events:auto}
-.det-box{background:var(--charcoal);border:1px solid rgba(255,255,255,0.08);border-radius:12px;max-width:700px;width:95%;max-height:90vh;overflow-y:auto;position:relative}
-.det-carousel{position:relative;height:350px;overflow:hidden;border-radius:12px 12px 0 0;background:var(--surface)}
+.det-box{background:var(--charcoal);border:1px solid rgba(255,255,255,0.08);border-radius:12px;max-width:1200px;width:96%;max-height:95vh;overflow-y:auto;position:relative}
+.det-carousel{position:relative;height:70vh;max-height:700px;overflow:hidden;border-radius:12px 12px 0 0;background:var(--surface)}
 .det-car-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .5s}
 .det-car-slide.active{opacity:1}
 .det-car-prev,.det-car-next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.1);color:var(--white);width:40px;height:40px;border-radius:6px;cursor:pointer;font-size:24px;display:flex;align-items:center;justify-content:center;transition:all .3s;z-index:2}
@@ -280,7 +280,7 @@ footer{background:var(--black);border-top:3px solid var(--red);padding:60px 0 0}
 
   .hero-stats{gap:24px;flex-wrap:wrap}
   .det-box{max-width:100%;border-radius:8px}
-  .det-carousel{height:250px}
+  .det-carousel{height:50vh;max-height:450px}
   .det-body{padding:20px}
   .det-specs-grid{grid-template-columns:repeat(2,1fr)}
   .values{grid-template-columns:repeat(2,1fr)}
